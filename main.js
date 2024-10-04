@@ -3,7 +3,6 @@ import { StartScene } from './scenes/start-scene.js';
 import { VideoScene } from './scenes/video-scene.js';
 import { GameScene } from './scenes/game-scene.js';
 
-// Create the Phaser Game instance
 const game = new Phaser.Game({
   type: Phaser.CANVAS,
   roundPixels: true,
@@ -28,10 +27,8 @@ const game = new Phaser.Game({
   },
 });
 
-// Add all scenes
 game.scene.add('StartScene', StartScene);
 game.scene.add('VideoScene', VideoScene);
 game.scene.add('GameScene', GameScene);
 
-// Start with the StartScene
 game.scene.start('StartScene');
